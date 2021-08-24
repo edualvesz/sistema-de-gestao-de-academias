@@ -246,26 +246,63 @@ return [
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
         ],
-        [
+        /*[
             'text'        => 'pages',
             'url'         => 'admin/pages',
             'icon'        => 'far fa-fw fa-file',
             'label'       => 4,
             'label_color' => 'success',
         ],
-        ['header' => 'account_settings'],
+        ['header' => 'account_settings'],*/
+        [
+            'text' => 'Resumo',
+            'url'  => 'admin/settings',
+            'icon' => 'nav-icon fas fa-th',
+        ],
+
         [
             'text' => 'Alunos',
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-user',
         ],
+
+        [
+            'text' => 'Mensalidades',
+            'url'  => 'admin/settings',
+            'icon' => 'nav-icon fas fa-table',
+        ],
+
+        [
+            'text' => 'Acompanhamento',
+            'url'  => 'admin/settings',
+            'icon' => 'nav-icon far fa-plus-square',
+        ],
+
+        [
+            'text' => 'Produtos',
+            'url'  => 'admin/settings',
+            'icon' => 'nav-icon fas fa-columns',
+        ],
+
+        [
+            'text' => 'Vendas',
+            'url'  => 'admin/settings',
+            'icon' => 'nav-icon fas fa-edit',
+        ],
+
+        [
+            'text' => 'Financeiro',
+            'url'  => 'admin/settings',
+            'icon' => 'nav-icon fas fa-chart-pie',
+        ],
+
         [
             'text' => 'change_password',
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
-            'text'    => 'multilevel',
+            'text'    => 'Relatórios',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [
@@ -302,7 +339,7 @@ return [
                 ],
             ],
         ],
-        ['header' => 'labels'],
+        /*['header' => 'labels'],
         [
             'text'       => 'important',
             'icon_color' => 'red',
@@ -317,7 +354,7 @@ return [
             'text'       => 'information',
             'icon_color' => 'cyan',
             'url'        => '#',
-        ],
+        ],*/
     ],
 
     /*
