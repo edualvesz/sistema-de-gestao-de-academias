@@ -8,6 +8,15 @@
 
 @section('content')
     <!--<p>Welcome to this beautiful admin panel.</p>-->
+
+    <div class="card">
+        <div class="card-body">
+            <!--<a href="aluno/index" class="btn btn-success">Adicionar Aluno</a>-->
+            <a href=" academia/aluno" class="btn btn-success">Adicionar Aluno</a>
+            <a href="#" class="btn btn-danger">Alunos desativados</a>
+        </div>
+    </div>
+
     <section class="content">
         <div class="container-fluid">
             <div class="row">

@@ -301,6 +301,7 @@ return [
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
         ],
+
         [
             'text'    => 'Relatórios',
             'icon'    => 'fas fa-fw fa-share',
