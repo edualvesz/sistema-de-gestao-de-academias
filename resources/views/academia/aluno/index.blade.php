@@ -31,7 +31,7 @@
                 <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">email*</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputPassword3" placeholder="email" maxlength="20" required>
+                        <input type="email" class="form-control" id="inputPassword3" placeholder="email" maxlength="50" required>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -95,7 +95,8 @@
             <!-- /.card-body -->
             <div class="card-footer">
                 <button type="submit" class="btn btn-info">Salvar</button>
-                <button type="reset" class="btn btn-default float-right">Cancelar</button>
+                <button type="reset" class="btn btn-default float-left">Limpar</button>
+                <button type="reset" class="btn btn-default float-left" onclick='history.go(-1)'>Voltar</button>
             </div>
             <!-- /.card-footer -->
         </form>

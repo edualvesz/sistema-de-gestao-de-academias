@@ -23,7 +23,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('academia/aluno', [App\Http\Controllers\AlunoController::class, 'index'])->name('index');
+Route::get('academia/aluno', [App\Http\Controllers\AlunoController::class, 'index'])->name('index'); //rota de adição de alunos da home
+
 
 //Route::resource('academia/aluno', 'AlunoController');
 
