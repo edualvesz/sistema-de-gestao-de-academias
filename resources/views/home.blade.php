@@ -68,7 +68,7 @@
                             <td>1.7</td>
                             <td>
                                 <div class="btn-group btn-group-sm">
-                                    <a title="Visualizar" href="academia/aluno/detalhe" class="btn btn-light"><i class="fas fa-eye"></i></a>
+                                    <a title="Detalhe" href="academia/aluno/detalhe" class="btn btn-light"><i class="fas fa-eye"></i></a>
                                     <a title="Editar" href="#" class="btn btn-info"><i class="fas fa-edit"></i></a>
                                     <a title="Excluir" href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                                 </div>
