@@ -228,7 +228,7 @@ return [
         // Navbar items:
         [
             'type'         => 'navbar-search',
-            'text'         => 'search',
+            'text'         => 'Pesquisar',
             'topnav_right' => true,
         ],
         [
@@ -256,7 +256,7 @@ return [
         ['header' => 'account_settings'],*/
         [
             'text' => 'Resumo',
-            'url'  => 'admin/settings',
+            'url'  => '/home',
             'icon' => 'nav-icon fas fa-th',
         ],
 
@@ -268,7 +268,7 @@ return [
 
         [
             'text' => 'Mensalidades',
-            'url'  => 'admin/settings',
+            'url'  => 'menu/mensalidade',
             'icon' => 'nav-icon fas fa-table',
         ],
 
