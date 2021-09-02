@@ -23,94 +23,97 @@
                             <div class="post">
                                 <div class="user-block">
                                 <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Expandable Table Tree</h3>
-              </div>
-              <!-- ./card-header -->
-              <div class="card-body p-0">
-                <table class="table table-hover">
-                  <tbody>
-                    
-                    <tr data-widget="expandable-table" aria-expanded="true">
-                      <td>
-                        <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
-                        219
-                      </td>
-                    </tr>
-                    <tr class="expandable-body">
-                      <td>
-                        <div class="p-0" >
-                          <table class="table table-hover">
-                            <tbody>
-                              <tr data-widget="expandable-table" aria-expanded="false">
-                                <td>
-                                  <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
-                                  219-1
-                                </td>
-                              </tr>
-                              <tr class="expandable-body d-none">
-                                <td>
-                                  <div class="p-0" style="display: none;">
-                                    <table class="table table-hover">
-                                      <tbody>
-                                        <tr>
-                                          <td>219-1-1</td>
-                                        </tr>
-                                        <tr>
-                                          <td>219-1-2</td>
-                                        </tr>
-                                        <tr>
-                                          <td>219-1-3</td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr data-widget="expandable-table" aria-expanded="true">
-                                <td>
-                                  <button type="button" class="btn btn-primary p-0">
-                                    <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
-                                  </button>
-                                  219-2
-                                </td>
-                              </tr>
-                              <tr class="expandable-body">
-                                <td>
-                                  <div class="p-0" style="height: 146px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
-                                    <table class="table table-hover">
-                                      <tbody>
-                                        <tr>
-                                          <td>219-2-1</td>
-                                        </tr>
-                                        <tr>
-                                          <td>219-2-2</td>
-                                        </tr>
-                                        <tr>
-                                          <td>219-2-3</td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </div>
-                                </td>
-                              </tr>
-                             
-                            </tbody>
-                          </table>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-          </div>
-        </div>
-    </div>
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h3 class="card-title">Dados do aluno</h3>
+                                            </div>  
+                                                <!-- ./card-header -->
+                                            <div class="card-body p-0">
+                                                <table class="table table-hover">
+                                                    <tbody>
+                                                        <tr data-widget="expandable-table" aria-expanded="true">
+                                                            <td>
+                                                                <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                                                Fulano de Tal
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="expandable-body">
+                                                            <td>
+                                                                <div class="p-0" >
+                                                                    <table class="table table-hover">
+                                                                        <tbody>
+                                                                            <tr data-widget="expandable-table" aria-expanded="false">
+                                                                                <td>
+                                                                                <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                                                                Dados Pessoais
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="expandable-body d-none">
+                                                                                <td>
+                                                                                    <div class="p-0" style="display: none;">
+                                                                                        <table class="table table-hover">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                <td>219-1-1</td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr data-widget="expandable-table" aria-expanded="false">
+                                                                                <td>
+                                                                                <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                                                                Contatos
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="expandable-body d-none">
+                                                                                <td>
+                                                                                    <div class="p-0" style="display: none;">
+                                                                                        <table class="table table-hover">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                <td>219-1-1</td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr data-widget="expandable-table" aria-expanded="false">
+                                                                                <td>
+                                                                                <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                                                                Endereço
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="expandable-body d-none">
+                                                                                <td>
+                                                                                    <div class="p-0" style="display: none;">
+                                                                                        <table class="table table-hover">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                <td>219-1-1</td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        <!-- /.card-body -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </div>
+                                    </div>
+                                </div>
                             <!-- /.user-block -->
                             <div class="row mb-3">
                             <!-- /.col -->
@@ -125,15 +128,95 @@
                   <!-- /.tab-pane -->
         <div class="tab-pane" id="timeline">
             <!-- The timeline -->
-            <div class="timeline timeline-inverse">
-                <div>
-                    <div class="timeline-item">
-                    
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                                <h3 class="card-title">Lançamentos Financeiros do Aluno</h3>
+                                <div class="card-tools">
+                                    <div class="input-group input-group-sm" style="width: 150px;">
+                                        <!-- <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+                                        <div class="input-group-append">
+                                            <button type="submit" class="btn btn-default">
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body table-responsive p-0">
+                                <table class="table table-hover text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Tipo</th>
+                                            <th>Aluno</th>
+                                            <th>Descrição</th>
+                                            <th>Vencimento</th>
+                                            <th>Status</th>
+                                            <th>Valor</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>183</td>
+                                            <td>John Doe</td>
+                                            <td>11-7-2014</td>
+                                            <td><span class="tag tag-success">Approved</span></td>
+                                            <td>Bacon ipsum dolor.</td>
+                                            <td>Bacon ipsum dolor.</td>
+                                            <td>Bacon ipsum dolor.</td>
+                                            <td>Bacon ipsum dolor.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>219</td>
+                                            <td>Alexander Pierce</td>
+                                            <td>11-7-2014</td>
+                                            <td><span class="tag tag-warning">Pending</span></td>
+                                            <td>Bacon ipsum dolor.</td>
+                                            <td>Bacon ipsum dolor.</td>
+                                            <td>Bacon ipsum dolor.</td>
+                                            <td>Bacon ipsum dolor.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>657</td>
+                                            <td>Bob Doe</td>
+                                            <td>11-7-2014</td>
+                                            <td><span class="tag tag-primary">Approved</span></td>
+                                            <td>Bacon ipsum dolor.</td>
+                                            <td>Bacon ipsum dolor.</td>
+                                            <td>Bacon ipsum dolor.</td>
+                                            <td>Bacon ipsum dolor.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>175</td>
+                                            <td>Mike Doe</td>
+                                            <td>11-7-2014</td>
+                                            <td><span class="tag tag-danger">Denied</span></td>
+                                            <td>Bacon ipsum dolor.</td>
+                                            <td>Bacon ipsum dolor.</td>
+                                            <td>Bacon ipsum dolor.</td>
+                                            <td>Bacon ipsum dolor.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
                     </div>
                 </div>
-            </div>
-            <div>
-                
+                    
+                    <div class="timeline timeline-inverse">
+                        <div>
+                            <div class="timeline-item">
+                                
+                            </div>
+                        </div>
+                    </div>
+                <div>
+                        
             </div>  
         </div>
     </div>
