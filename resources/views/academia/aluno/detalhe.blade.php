@@ -14,7 +14,7 @@
                 <ul class="nav nav-pills">
                     <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Dados do aluno</a></li>
                     <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Transações</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Orçamentos</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Orçamentos</a></li> -->
                 </ul>
             </div><!-- /.card-header -->
                 <div class="card-body">
@@ -206,8 +206,7 @@
                         </div>
                         <!-- /.card -->
                     </div>
-                </div>
-                    
+                </div>       
                     <div class="timeline timeline-inverse">
                         <div>
                             <div class="timeline-item">
