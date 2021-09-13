@@ -31,3 +31,7 @@ Route::get('academia/aluno/detalhe', [App\Http\Controllers\DetalheController::cl
 
 //Route::resource('academia/aluno', 'AlunoController');
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
