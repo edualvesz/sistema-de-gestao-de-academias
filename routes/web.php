@@ -27,6 +27,8 @@ Route::get('academia/aluno', [App\Http\Controllers\AlunoController::class, 'inde
 
 Route::get('menu/mensalidade', [App\Http\Controllers\MensalidadeController::class, 'index'])->name('mensalidade'); //Rota do menu de mensalidade
 
+Route::get('menu/mensalidade/servico', [App\Http\Controllers\ServicoController::class, 'index'])->name('servico'); // Rota da guia de serviços
+
 Route::get('academia/aluno/detalhe', [App\Http\Controllers\DetalheController::class, 'index'])->name('detalhe'); //Rota do menu de mensalidade
 
 //Route::resource('academia/aluno', 'AlunoController');
