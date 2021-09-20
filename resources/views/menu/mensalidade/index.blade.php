@@ -17,12 +17,12 @@
             <div class="d-grid gap-2 d-md-block">
                 <!-- <a href="#" class="btn btn-success">+ Adicionar Novo</a> -->
                 <a href="#" class="btn btn-app bg-success">
-                <i class="fas fa-users"></i> + Adicionar Novo
+                <i class="fas fa-users"></i> + Adicionar Novo (JANELA MODAL)
                 </a>
             </div>
             <div class="col-2 mx-auto">
                 <!-- <a href="#" class="link-primary">Mensalidades Pagas</a> -->
-                <a href="#" class="btn btn-app">
+                <a href="mensalidade/pagamento" class="btn btn-app">
                 <!-- <span class="badge bg-success">300</span> -->
                 <i class="fas fa-barcode"></i>Mensalidades Pagas 
                 </a>
