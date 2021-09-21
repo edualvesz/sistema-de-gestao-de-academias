@@ -8,6 +8,7 @@
 
 @section('content')
     <!--<p>Welcome to this beautiful admin panel.</p>-->
+<div class="col-8"> <!-- div que da a largura para e objeto -->
     <div class="card card-info">
         <div class="card-header">
             <h3 class="card-title">Cadastro de aluno</h3>
@@ -101,7 +102,7 @@
             <!-- /.card-footer -->
         </form>
     </div>
-    
+</div>  
 @stop
 
 @section('css')
