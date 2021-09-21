@@ -262,7 +262,7 @@ return [
 
         [
             'text' => 'Alunos',
-            'url'  => 'admin/settings',
+            'url'  => 'menu/aluno',
             'icon' => 'fas fa-fw fa-user',
         ],
 
@@ -274,7 +274,7 @@ return [
 
         [
             'text' => 'Acompanhamento',
-            'url'  => 'admin/settings',
+            'url'  => 'menu/acompanhamento',
             'icon' => 'nav-icon far fa-plus-square',
         ],
 

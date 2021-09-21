@@ -21,9 +21,16 @@ Route::get('/', function () {
 
 Auth::routes();
 
+//Rotas da home
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('academia/aluno', [App\Http\Controllers\AlunoController::class, 'index'])->name('index'); //rota de adição de alunos da home
+
+Route::get('academia/aluno/detalhe', [App\Http\Controllers\DetalheController::class, 'index'])->name('detalhe'); //Rota do menu de opções da home
+
+
+//Rotas do menu de mensalidade
 
 Route::get('menu/mensalidade', [App\Http\Controllers\MensalidadeController::class, 'index'])->name('mensalidade'); //Rota do menu de mensalidade
 
@@ -33,7 +40,10 @@ Route::get('menu/mensalidade/servico/adicionar', [App\Http\Controllers\Addservic
 
 Route::get('menu/mensalidade/pagamento', [App\Http\Controllers\PagamentoController::class, 'index'])->name('pagamento'); //Rota da guia de mensalidades pagas
 
-Route::get('academia/aluno/detalhe', [App\Http\Controllers\DetalheController::class, 'index'])->name('detalhe'); //Rota do menu de mensalidade
+
+//Rotas do menu de acompanhamento
+
+Route::get('menu/acompanhamento', [App\Http\Controllers\AcompanhamentoController::class, 'index'])->name('acompanhamento'); //Rota do menu de acompanhamento
 
 //Route::resource('academia/aluno', 'AlunoController');
 
