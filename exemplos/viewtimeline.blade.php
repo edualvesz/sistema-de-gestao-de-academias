@@ -10,11 +10,9 @@
 <div class="card">
     <div class="card-header p-2">
         <ul class="nav nav-pills">
-            <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Resumo</a></li>
-            <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Objetivo</a></li>
-            <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Antropometria</a></li>
-            <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">PAR-Q e Anamnese</a></li>
-            <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Ficha de Treinamento</a></li>
+            <li class="nav-item"><a class="nav-link" href="#activity" data-toggle="tab">Activity</a></li>
+            <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Timeline</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#settings" data-toggle="tab">Settings</a></li>
         </ul>
     </div><!-- /.card-header -->
 
