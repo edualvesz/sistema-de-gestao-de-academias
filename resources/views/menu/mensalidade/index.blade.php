@@ -20,8 +20,6 @@
                 <i class="fas fa-users"></i> + Adicionar Novo
                 </a>
             </div>
-
-           <!--  <a href="" data-target="#modal-lg" data-toggle="modal"><button type="button" class="btn btn-default" >Launch Large Modal</button></a> -->
             @include('menu.mensalidade.modal')
 
             <div class="col-2 mx-auto">
