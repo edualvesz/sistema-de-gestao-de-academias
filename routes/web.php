@@ -29,6 +29,9 @@ Route::get('academia/aluno', [App\Http\Controllers\AlunoController::class, 'inde
 
 Route::get('academia/aluno/detalhe', [App\Http\Controllers\DetalheController::class, 'index'])->name('detalhe'); //Rota do menu de opções da home
 
+//Rotas do menu de alunos
+
+Route::get('menu/aluno', [App\Http\Controllers\AlunoMenuController::class, 'index'])->name('aluno');
 
 //Rotas do menu de mensalidade
 
