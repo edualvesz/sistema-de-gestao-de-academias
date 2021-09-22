@@ -8,15 +8,6 @@
 
 @section('content')
     <!--<p>Welcome to this beautiful admin panel.</p>-->
-
-    <div class="card">
-        <div class="card-body">
-            <!--<a href="aluno/index" class="btn btn-success">Adicionar Aluno</a>-->
-            <a href=" academia/aluno" class="btn btn-success">Adicionar Aluno</a>
-            <a href="#" class="btn btn-danger">Alunos desativados</a>
-        </div>
-    </div>
-
     <section class="content">
         <div class="container-fluid">
             <div class="row">
@@ -37,20 +28,17 @@
                             <div class="card-body">
                             <!--Start creating your amazing application!-->
                             <div class="card">
-              <!--<div class="card-header">
-                <h3 class="card-title">DataTable with default features</h3>
-              </div>-->
-              <!-- /.card-header -->
-              <div class="card-body">
-                <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
-                    <div class="row"><div class="col-sm-12 col-md-6"><div class="dt-buttons btn-group flex-wrap">               
-                        <button class="btn btn-secondary buttons-copy buttons-html5" tabindex="0" aria-controls="example1" type="button"><span>Copiar</span></button> <!-- <button class="btn btn-secondary buttons-csv buttons-html5" tabindex="0" aria-controls="example1" type="button"><span>CSV</span></button> --> 
-                        <button class="btn btn-secondary buttons-excel buttons-html5" tabindex="0" aria-controls="example1" type="button"><span>Excel</span></button> 
-                        <button class="btn btn-secondary buttons-pdf buttons-html5" tabindex="0" aria-controls="example1" type="button"><span>PDF</span></button> 
-                        <button class="btn btn-secondary buttons-print" tabindex="0" aria-controls="example1" type="button"><span>Imprimir</span></button> <div class="btn-group">
-                            <button class="btn btn-secondary buttons-collection dropdown-toggle buttons-colvis" tabindex="0" aria-controls="example1" type="button" aria-haspopup="true" aria-expanded="false"><span>Visibilidade da coluna</span></button></div> </div></div><div class="col-sm-12 col-md-6"><div id="example1_filter" class="dataTables_filter">
-                                <label>Pesquisar:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="example1"></label>
-                    </div></div></div><div class="row"><div class="col-sm-12"><table id="example1" class="table table-bordered table-striped dataTable dtr-inline" role="grid" aria-describedby="example1_info">
+            </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                    <table id="example1" class="table table-bordered table-striped dataTable dtr-inline" role="grid" aria-describedby="example1_info">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href=" academia/aluno" class="btn btn-success">Adicionar Aluno</a>
+                                <a href="#" class="btn btn-danger">Alunos desativados</a>
+                                <label><input type="search" class="form-control form-control-sm" placeholder="Pesquisar" aria-controls="example1"></label>
+                            </div> 
+                        </div>
                   <thead>
                   <tr role="row">
                       <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column descending" aria-sort="ascending">ID do aluno</th>
