@@ -7,92 +7,59 @@
 @stop
 
 @section('content')
-<div class="row">
-          <div class="col-12">
-            <!-- Custom Tabs -->
-            <div class="card">
-              <div class="card-header p-0">
-                
-                <ul class="nav nav-pills ml-auto p-2">
-                  <li class="nav-item"><a class="nav-link active" href="#tab_1" data-toggle="tab">Resumo</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#tab_2" data-toggle="tab">Objetivo</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#tab_3" data-toggle="tab">Antropometria</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#tab_4" data-toggle="tab">PAR-Q e Anamnese</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#tab_5" data-toggle="tab">Ficha de Treinamento</a></li>
-
-                  <!-- Abaixo está um menu dropdown -->
-
-                  <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
-                      Dropdown <span class="caret"></span>
-                    </a>
-                    <div class="dropdown-menu" style="">
-                      <a class="dropdown-item" tabindex="-1" href="#">Action</a>
-                      <a class="dropdown-item" tabindex="-1" href="#">Another action</a>
-                      <a class="dropdown-item" tabindex="-1" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" tabindex="-1" href="#">Separated link</a>
-                    </div>
-                  </li> -->
+<div class="col-12">
+            <div class="card card-primary card-tabs">
+              <div class="card-header p-0 pt-1">
+                <ul class="nav nav-tabs" id="custom-tabs-one-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="custom-tabs-one-home-tab" data-toggle="pill" href="#custom-tabs-one-home" role="tab" aria-controls="custom-tabs-one-home" aria-selected="true">Resumo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-profile-tab" data-toggle="pill" href="#custom-tabs-one-profile" role="tab" aria-controls="custom-tabs-one-profile" aria-selected="false">Objetivo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-messages-tab" data-toggle="pill" href="#custom-tabs-one-messages" role="tab" aria-controls="custom-tabs-one-messages" aria-selected="false">Antropometria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill" href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings" aria-selected="false">PAR-Q e Anamnese</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill" href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings" aria-selected="false">Ficha de Treinamento</a>
+                  </li>
                 </ul>
-              </div><!-- /.card-header -->
+              </div>
               <div class="card-body">
-                <div class="tab-content">
-                  <div class="tab-pane active" id="tab_1">
-                    A wonderful serenity has taken possession of my entire soul,
-                    like these sweet mornings of spring which I enjoy with my whole heart.
-                    I am alone, and feel the charm of existence in this spot,
-                    which was created for the bliss of souls like mine. I am so happy,
-                    my dear friend, so absorbed in the exquisite sense of mere tranquil existence,
-                    that I neglect my talents. I should be incapable of drawing a single stroke
-                    at the present moment; and yet I feel that I never was a greater artist than now.
+                <div class="tab-content" id="custom-tabs-one-tabContent">
+                  <div class="tab-pane fade active show" id="custom-tabs-one-home" role="tabpanel" aria-labelledby="custom-tabs-one-home-tab">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada lacus ullamcorper dui molestie, sit amet congue quam finibus. 
+                     Etiam ultricies nunc non magna feugiat commodo. Etiam odio magna, mollis auctor felis vitae, ullamcorper ornare ligula.
+                      Proin pellentesque tincidunt nisi, vitae ullamcorper felis aliquam id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                       Proin id orci eu lectus blandit suscipit. Phasellus porta, ante et varius ornare, sem enim sollicitudin eros, at commodo leo est vitae lacus. 
+                       Etiam ut porta sem. Proin porttitor porta nisl, id tempor risus rhoncus quis. In in quam a nibh cursus pulvinar non consequat neque. 
+                       Mauris lacus elit, condimentum ac condimentum at, semper vitae lectus. Cras lacinia erat eget sapien porta consectetur.
                   </div>
-                  <!-- /.tab-pane -->
-                  <div class="tab-pane" id="tab_2">
-                    The European languages are members of the same family. Their separate existence is a myth.
-                    For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ
-                    in their grammar, their pronunciation and their most common words. Everyone realizes why a
-                    new common language would be desirable: one could refuse to pay expensive translators. To
-                    achieve this, it would be necessary to have uniform grammar, pronunciation and more common
-                    words. If several languages coalesce, the grammar of the resulting language is more simple
-                    and regular than that of the individual languages.
+                  <div class="tab-pane fade" id="custom-tabs-one-profile" role="tabpanel" aria-labelledby="custom-tabs-one-profile-tab">
+                     Mauris tincidunt mi at erat gravida, eget tristique urna bibendum. Mauris pharetra purus ut ligula tempor, et vulputate metus facilisis. 
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+                     Maecenas sollicitudin, nisi a luctus interdum, nisl ligula placerat mi, quis posuere purus ligula eu lectus. Donec nunc tellus, 
+                     elementum sit amet ultricies at, posuere nec nunc. Nunc euismod pellentesque diam.
                   </div>
-                  <!-- /.tab-pane -->
-                  <div class="tab-pane" id="tab_3">
-                  Proin dictum blandit ullamcorper. Vestibulum est augue, luctus nec euismod eu, ultricies in lacus. 
-                  Cras dignissim malesuada ipsum, vel accumsan tellus venenatis at. Fusce leo lectus, euismod non sem quis, tincidunt molestie neque. 
-                  Ut maximus sollicitudin ipsum, et tincidunt lectus auctor at. Duis sapien quam, malesuada a metus id, interdum vulputate lorem. 
-                  Sed sit amet justo ut lectus interdum feugiat. Integer venenatis elit nec efficitur dictum. Mauris vel accumsan purus. 
-                  Phasellus arcu quam, viverra non cursus nec, interdum quis massa. Sed pellentesque volutpat consectetur. 
-                  Mauris venenatis massa metus, a blandit erat feugiat sit amet.
+                  <div class="tab-pane fade" id="custom-tabs-one-messages" role="tabpanel" aria-labelledby="custom-tabs-one-messages-tab">
+                     Morbi turpis dolor, vulputate vitae felis non, tincidunt congue mauris. Phasellus volutpat augue id mi placerat mollis. 
+                     Vivamus faucibus eu massa eget condimentum. Fusce nec hendrerit sem, ac tristique nulla. 
+                     Integer vestibulum orci odio. Cras nec augue ipsum. Suspendisse ut velit condimentum, mattis urna a, malesuada nunc. 
+                     Curabitur eleifend facilisis velit finibus tristique. Nam vulputate, eros non luctus efficitur, ipsum odio volutpat 
+                     massa, sit amet sollicitudin est libero sed ipsum. Nulla lacinia, ex vitae gravida fermentum, 
+                     lectus ipsum gravida arcu, id fermentum metus arcu vel metus. Curabitur eget sem eu risus tincidunt eleifend ac ornare magna.
                   </div>
-                  <!-- /.tab-pane -->
-                  <div class="tab-pane" id="tab_4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec tincidunt diam. Cras dapibus dignissim turpis. 
-                    Aliquam interdum imperdiet diam, vel facilisis eros. Sed vel diam sodales, sagittis est ut, facilisis mi.
-                    Fusce elit quam, molestie nec sodales at, laoreet eget lectus. Phasellus viverra sapien sed molestie fringilla. 
-                    Donec tincidunt non erat at lobortis. Cras eu turpis ac purus condimentum rutrum. Donec in tellus sagittis, tristique mi eu, fringilla augue. 
-                    Aenean consequat at orci at aliquam. Sed suscipit rhoncus massa, ut placerat orci. Phasellus vel commodo risus.
+                  <div class="tab-pane fade" id="custom-tabs-one-settings" role="tabpanel" aria-labelledby="custom-tabs-one-settings-tab">
+                     Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus turpis ac, ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate. Morbi euismod molestie tristique. Vestibulum consectetur dolor a vestibulum pharetra. Donec interdum placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat diam. Nunc et felis ut nisl commodo dignissim. In hac habitasse platea dictumst. Praesent imperdiet accumsan ex sit amet facilisis.
                   </div>
-                  <!-- /.tab-pane -->
-                  <div class="tab-pane" id="tab_5">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    It has survived not only five centuries, but also the leap into electronic typesetting,
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-                  </div>
-                  <!-- /.tab-pane -->
                 </div>
-                <!-- /.tab-content -->
-              </div><!-- /.card-body -->
+              </div>
+              <!-- /.card -->
             </div>
-            <!-- ./card -->
           </div>
-          <!-- /.col -->
-        </div>
 @stop
 
 @section('css')

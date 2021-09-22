@@ -16,10 +16,14 @@
         <div class="row align-self-center w-100">  <!-- Itens alinhados deverão ficar nessa div -->
             <div class="d-grid gap-2 d-md-block">
                 <!-- <a href="#" class="btn btn-success">+ Adicionar Novo</a> -->
-                <a href="#" class="btn btn-app bg-success">
-                <i class="fas fa-users"></i> + Adicionar Novo (JANELA MODAL)
+                <a href="" class="btn btn-app bg-success" data-target="#modal-lg" data-toggle="modal">
+                <i class="fas fa-users"></i> + Adicionar Novo
                 </a>
             </div>
+
+           <!--  <a href="" data-target="#modal-lg" data-toggle="modal"><button type="button" class="btn btn-default" >Launch Large Modal</button></a> -->
+            @include('menu.mensalidade.modal')
+
             <div class="col-2 mx-auto">
                 <!-- <a href="#" class="link-primary">Mensalidades Pagas</a> -->
                 <a href="mensalidade/pagamento" class="btn btn-app">
