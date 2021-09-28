@@ -48,6 +48,8 @@ Route::get('menu/mensalidade/pagamento', [App\Http\Controllers\PagamentoControll
 
 Route::get('menu/acompanhamento', [App\Http\Controllers\AcompanhamentoController::class, 'index'])->name('acompanhamento'); //Rota do menu de acompanhamento
 
+Route::get('menu/acompanhamento/edit', [App\Http\Controllers\EditnovoController::class, 'index'])->name('edit'); //Rota da opção de iniciar novo acompanhamento
+
 //Route::resource('academia/aluno', 'AlunoController');
 
 

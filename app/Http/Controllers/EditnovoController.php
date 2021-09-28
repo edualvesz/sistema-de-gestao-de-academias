@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Http\Request;
 
-class DetalheController extends Controller
+class EditnovoController extends Controller
 {
-    public function index()
+    public function index ()
     {
-        return view('menu\acompanhamento\index');
+        return view ('menu/acompanhamento/edit');
     }
 }
