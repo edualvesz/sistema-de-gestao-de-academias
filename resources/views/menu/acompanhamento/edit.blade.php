@@ -19,10 +19,10 @@
                         <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Objetivo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false">Antropometria</a>
+                        <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false">PAR-Q e Anamnese</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="custom-tabs-four-settings-tab" data-toggle="pill" href="#custom-tabs-four-settings" role="tab" aria-controls="custom-tabs-four-settings" aria-selected="true">PAR-Q e Anamnese</a>
+                        <a class="nav-link" id="custom-tabs-four-settings-tab" data-toggle="pill" href="#custom-tabs-four-settings" role="tab" aria-controls="custom-tabs-four-settings" aria-selected="true">Antropometria</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="custom-tabs-four-settings-tab" data-toggle="pill" href="#custom-tabs-four-settings" role="tab" aria-controls="custom-tabs-four-settings" aria-selected="true">Ficha Treinamento</a>
@@ -41,7 +41,7 @@
                             <h5>Avaliação da composição corporal: Protocolo Pollok (Sete dobras cutâneas):</h5><br><br>
                             <div class="card">
                             <div class="card-body">
-                                <p>O IMC é apenas um arefência de peso recomendado para cada indivíduo, indicado para sedentários ou iniciantes de atividade física.
+                                <p>O IMC é apenas uma refência de peso recomendado para cada indivíduo, indicado para sedentários ou iniciantes de atividade física.
                                     Não recomendado para atletas ou praticantes avançados, por não distinguir massa magra de massa gorda. 
                                 </p>
                             </div> 
@@ -76,20 +76,45 @@
                                 <label>Pretende alcançar o objetivo em quantos meses?</label>
                                 <input type="text" class="form-control" id="exampleInputEmail1" placeholder=""><br><br>
                                 <button type="button" class="btn btn-sm btn-outline-danger">Salvar alterações</button>
-                            </div>
+                            </div>                          
                     <!-- /.form-group -->
                         </div>
                             </div>
-                            <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
-                                
+                                <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
+                                    <div class="bootstrap-duallistbox-container row moveonselect moveondoubleclick"> 
+                                        <div class="box1 col-md-4">   
+                                            <label for="bootstrap-duallistbox-nonselected-list_" style="display: none;"></label>   
+                                                <span class="info-container">       
+                                                    <span class="info">Telefone em caso de emergência</span>     
+                                                </span>   
+                                            <input class="form-control filter" type="text" maxlength="12" data-mask="(00)00000-0000">
+                                        </div> 
+                                        <div class="box2 col-md-4">   
+                                            <label for="bootstrap-duallistbox-selected-list_" style="display: none;"></label>   
+                                                <span class="info-container">     
+                                                    <span class="info">Responsável em caso de emergência</span>     
+                                                </span>   
+                                            <input class="form-control filter" type="text" maxlength="50">         
+                                        </div>
+                                        <div class="box2 col-md-4">   
+                                            <label for="bootstrap-duallistbox-selected-list_" style="display: none;"></label>   
+                                                <span class="info-container">     
+                                                    <span class="info">Telefone extra de emergência</span>     
+                                                </span>   
+                                            <input class="form-control filter" type="text" maxlength="12" data-mask="(00)00000-0000">         
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="custom-tabs-four-settings" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
+                                    
+                                </div> 
+                                <div class="tab-pane fade" id="custom-tabs-four-settings" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
+                                    
+                                </div>    
                             </div>
-                            <div class="tab-pane fade" id="custom-tabs-four-settings" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
-                                
-                            </div>    
                         </div>
                     </div>
                 </div>
-            </div>
 @stop
 
 @section('css')

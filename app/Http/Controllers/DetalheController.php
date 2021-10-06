@@ -8,6 +8,6 @@ class DetalheController extends Controller
 {
     public function index()
     {
-        return view('menu\acompanhamento\index');
+        return view('academia\aluno\detalhe');
     }
 }
