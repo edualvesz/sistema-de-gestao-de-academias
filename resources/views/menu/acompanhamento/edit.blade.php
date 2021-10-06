@@ -30,6 +30,7 @@
                 </ul>
             </div>
                 <div class="card-body">
+                    <!-- Aba 1 -->
                     <div class="tab-content" id="custom-tabs-four-tabContent">
                         <div class="tab-pane fade active show" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
                             <h5>Objetivo principal:</h5><br><br>
@@ -38,23 +39,57 @@
                             <h5>PAR-Q:</h5><br><br>
                             <h5>Última avaliação física:</h5><br><br>
                             <h5>Avaliação da composição corporal: Protocolo Pollok (Sete dobras cutâneas):</h5><br><br>
+                            <div class="card">
+                            <div class="card-body">
+                                <p>O IMC é apenas um arefência de peso recomendado para cada indivíduo, indicado para sedentários ou iniciantes de atividade física.
+                                    Não recomendado para atletas ou praticantes avançados, por não distinguir massa magra de massa gorda. 
+                                </p>
+                            </div> 
                         </div>
-                        <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
-                            
+                    </div>
+                    <!-- Aba 2 -->
+                    <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
+                        <div class="col-md-6" data-select2-id="29">
+                            <div class="form-group">
+                                <label>Qual o seu objetivo principal</label>
+                                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                                    <option selected="selected" data-select2-id="3"></option>
+                                    <option data-select2-id="31">Aumento de massa muscular</option>
+                                    <option data-select2-id="32">Perder peso (diminuição da gordura corporal)</option>
+                                    <option data-select2-id="33">Aumento da flexibilidade óssea com alongamentos</option>
+                                    <option data-select2-id="34">Qualidade de vida e diminuição do estresse</option>
+                                    <option data-select2-id="35">Aumento da performance esportiva</option>
+                                    <option data-select2-id="35">Recuperação de lesão</option>
+                                </select><br><br>
+                                <label>Qual o seu objetivo secundário</label>
+                                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                                    <option selected="selected" data-select2-id="3"></option>
+                                    <option data-select2-id="31">Aumento de massa muscular</option>
+                                    <option data-select2-id="32">Perder peso (diminuição da gordura corporal)</option>
+                                    <option data-select2-id="33">Aumento da flexibilidade óssea com alongamentos</option>
+                                    <option data-select2-id="34">Qualidade de vida e diminuição do estresse</option>
+                                    <option data-select2-id="35">Aumento da performance esportiva</option>
+                                    <option data-select2-id="35">Recuperação de lesão</option>
+                                </select><span class="select2 select2-container select2-container--default select2-container--below select2-container--focus" dir="ltr" data-select2-id="2" style="width: 100%;"><br><br>  
+                                <label>Meta de peso ideal (deixar em branco caso o objetivo do aluno não seja ganhar ou perder peso)</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder=""><br><br>
+                                <label>Pretende alcançar o objetivo em quantos meses?</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder=""><br><br>
+                                <button type="button" class="btn btn-sm btn-outline-danger">Salvar alterações</button>
+                            </div>
+                    <!-- /.form-group -->
                         </div>
-                        <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
-                            
+                            </div>
+                            <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
+                                
+                            </div>
+                            <div class="tab-pane fade" id="custom-tabs-four-settings" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
+                                
+                            </div>    
                         </div>
-                        <div class="tab-pane fade" id="custom-tabs-four-settings" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
-                            
-                        </div>    
                     </div>
                 </div>
             </div>
-            <div class="row">
-
-            </div>
-        </div>
 @stop
 
 @section('css')
