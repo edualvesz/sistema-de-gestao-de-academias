@@ -79,33 +79,183 @@
                             </div>                          
                     <!-- /.form-group -->
                         </div>
-                            </div>
-                                <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
-                                    <div class="bootstrap-duallistbox-container row moveonselect moveondoubleclick"> 
-                                        <div class="box1 col-md-4">   
-                                            <label for="bootstrap-duallistbox-nonselected-list_" style="display: none;"></label>   
-                                                <span class="info-container">       
-                                                    <span class="info">Telefone em caso de emergência</span>     
-                                                </span>   
-                                            <input class="form-control filter" type="text" maxlength="12" data-mask="(00)00000-0000">
-                                        </div> 
-                                        <div class="box2 col-md-4">   
-                                            <label for="bootstrap-duallistbox-selected-list_" style="display: none;"></label>   
-                                                <span class="info-container">     
-                                                    <span class="info">Responsável em caso de emergência</span>     
-                                                </span>   
-                                            <input class="form-control filter" type="text" maxlength="50">         
-                                        </div>
-                                        <div class="box2 col-md-4">   
-                                            <label for="bootstrap-duallistbox-selected-list_" style="display: none;"></label>   
-                                                <span class="info-container">     
-                                                    <span class="info">Telefone extra de emergência</span>     
-                                                </span>   
-                                            <input class="form-control filter" type="text" maxlength="12" data-mask="(00)00000-0000">         
-                                        </div>
-                                    </div>
+                    </div>
+                        <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
+                            <div class="bootstrap-duallistbox-container row moveonselect moveondoubleclick"> 
+                                <div class="box1 col-md-4">   
+                                    <label for="bootstrap-duallistbox-nonselected-list_" style="display: none;"></label>   
+                                        <span class="info-container">       
+                                            <span class="info">Telefone em caso de emergência</span>     
+                                        </span>   
+                                    <input class="form-control filter" type="text" maxlength="12" data-mask="(00)00000-0000">
+                                </div> 
+                                <div class="box2 col-md-4">   
+                                    <label for="bootstrap-duallistbox-selected-list_" style="display: none;"></label>   
+                                        <span class="info-container">     
+                                            <span class="info">Responsável em caso de emergência</span>     
+                                        </span>   
+                                    <input class="form-control filter" type="text" maxlength="50">         
                                 </div>
-                                <div class="tab-pane fade" id="custom-tabs-four-settings" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
+                                <div class="box2 col-md-4">   
+                                    <label for="bootstrap-duallistbox-selected-list_" style="display: none;"></label>   
+                                        <span class="info-container">     
+                                            <span class="info">Telefone extra de emergência</span>     
+                                        </span>   
+                                    <input class="form-control filter" type="text" maxlength="12" data-mask="(00)00000-0000">         
+                                </div>
+                            </div><br><br>
+                            <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">PAR-Q Questionário de Prontidão para Atividade Física</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <div id="example2_wrapper" class="dataTables_wrapper dt-bootstrap4"><div class="row"><div class="col-sm-12 col-md-6"></div><div class="col-sm-12 col-md-6"></div></div><div class="row"><div class="col-sm-12"><table id="example2" class="table table-bordered table-hover dataTable dtr-inline" role="grid" aria-describedby="example2_info">
+                  <thead>
+                    <tr role="row">
+                        <th class="sorting sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">#</th>
+                        <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending">Questão</th>
+                        <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">Sim</th>
+                        <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Não</th>
+                  </thead>
+                  <tbody>
+                  <tr class="odd">
+                    <td class="dtr-control sorting_1" tabindex="0">1</td>
+                    <td>O seu médico já lhe disse que você tem algum problema cardíaco?</td>
+                    <!-- area do input type radio -->
+                    <td>    
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio1">
+                            </div>
+                        </div>
+                    </td>
+                    <td>    
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio1">
+                            </div>
+                        </div>
+                    </td>
+                    <tr class="even">
+                    <td class="dtr-control sorting_1" tabindex="0">2</td>
+                    <td>Você tem dores no peito com frequência ou causada pela prática de atividades físicas?</td>
+                    <!-- area do input type radio -->
+                    <td>    
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio3">
+                            </div>
+                        </div>
+                    </td>
+                    <td>    
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio4">
+                            </div>
+                        </div>
+                    </td>
+                  </tr><tr class="odd">
+                    <td class="dtr-control sorting_1" tabindex="0">3</td>
+                    <td>Você tende a perder a consciência ou cair como resultado de tontura ou desmaio?</td>
+                    <!-- area do input type radio -->
+                    <td>    
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio5">
+                            </div>
+                        </div>
+                    </td>
+                    <td>    
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio6">
+                            </div>
+                        </div>
+                    </td>
+                  </tr><tr class="even">
+                    <td class="dtr-control sorting_1" tabindex="0">4</td>
+                    <td>Algum médico já lhe disse que a sua pressão arterial estava muito alta?</td>
+                    <!-- area do input type radio -->
+                    <td>    
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio7">
+                            </div>
+                        </div>
+                    </td>
+                    <td>    
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio8">
+                            </div>
+                        </div>
+                    </td>
+                  </tr><tr class="odd">
+                    <td class="sorting_1 dtr-control">5</td>
+                    <td>Algum médico já lhe disse que você tem um problema ósseo ou articular, ex: artrite, que se tenha agravado com o exercício ou que possa piorar com ele?</td>
+                    <!-- area do input type radio -->
+                    <td>    
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio9">
+                            </div>
+                        </div>
+                    </td>
+                    <td>    
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio10">
+                            </div>
+                        </div>
+                    </td>
+                  </tr><tr class="even">
+                    <td class="sorting_1 dtr-control">6</td>
+                    <td>Existe alguma boa razão física não mencionada aqui para que você não siga um programa de atividade física mesmo que você queira?</td>
+                    <!-- area do input type radio -->
+                    <td>    
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio11">
+                            </div>
+                        </div>
+                    </td>
+                    <td>    
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio12">
+                            </div>
+                        </div>
+                    </td>
+                  </tr><tr class="odd">
+                    <td class="sorting_1 dtr-control">7</td>
+                    <td>Você tem mais de 65 anos e não está acostumados a exercícios intensos?</td>
+                    <!-- area do input type radio -->
+                    <td>    
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio13">
+                            </div>
+                        </div>
+                    </td>
+                    <td>    
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio14">
+                            </div>
+                        </div>
+                    </td>
+                  </tr>
+                </tbody>
+                  
+                </table>
+            </div>
+        </div>
+                                <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
                                     
                                 </div> 
                                 <div class="tab-pane fade" id="custom-tabs-four-settings" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
