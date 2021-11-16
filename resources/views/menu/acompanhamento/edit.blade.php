@@ -22,15 +22,15 @@
                         <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false">PAR-Q e Anamnese</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" id="custom-tabs-four-settings-tab" data-toggle="pill" href="#custom-tabs-four-settings" role="tab" aria-controls="custom-tabs-four-settings" aria-selected="false">Ficha de treinamento</a>
+                    </li> 
+                    <!-- <li class="nav-item">
                         <a class="nav-link" id="custom-tabs-four-settings-tab" data-toggle="pill" href="#custom-tabs-four-settings" role="tab" aria-controls="custom-tabs-four-settings" aria-selected="true">Antropometria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="custom-tabs-four-settings-tab" data-toggle="pill" href="#custom-tabs-four-settings" role="tab" aria-controls="custom-tabs-four-settings" aria-selected="true">Ficha Treinamento</a>
-                    </li>
+                    </li> --> 
                 </ul>
             </div>
                 <div class="card-body">
-                    <!-- Aba 1 -->
+<!-- -------------------------------------------------------------------------------------------------------- Aba 1 -------------------------------------------------------------------------------------------------------->
                     <div class="tab-content" id="custom-tabs-four-tabContent">
                         <div class="tab-pane fade active show" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
                             <h5>Objetivo principal:</h5><br><br>
@@ -47,7 +47,7 @@
                             </div> 
                         </div>
                     </div>
-                    <!-- Aba 2 -->
+<!-- -------------------------------------------------------------------------------------------------------- Aba 2 -------------------------------------------------------------------------------------------------------->
                     <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
                         <div class="col-md-6" data-select2-id="29">
                             <div class="form-group">
@@ -79,7 +79,7 @@
                             </div>                          
                         </div>
                     </div>
-                    <!-- Aba 3 -->
+<!-- -------------------------------------------------------------------------------------------------------- Aba 3 -------------------------------------------------------------------------------------------------------->
                         <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
                             <div class="bootstrap-duallistbox-container row moveonselect moveondoubleclick"> 
                                 <div class="box1 col-md-4">   
@@ -103,7 +103,7 @@
                                         </span>   
                                     <input class="form-control filter" type="text" maxlength="12" data-mask="(00)00000-0000">         
                                 </div>
-                            </div><br><br>
+                             </div><br><br> 
                             <section class="content">
                                 <div class="container-fluid">
                                     <div class="row">
@@ -261,7 +261,7 @@
                                         </table>
                                         </div>
                                     </div><br><br>
-    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --> 
+  
                                     <div class="row">   
                                     <div class="col-sm-12">
                                         <table id="example2" class="table table-bordered table-hover dataTable dtr-inline" role="grid" aria-describedby="example2_info">
@@ -385,14 +385,14 @@
                                             </table><br>
                                             <a href="" class="btn-info btn-sm" data-target="#modal-lg" data-toggle="modal">Gravar alterações</a>
                                         </div>
-
-    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->                                
-                                </div> 
+                                    </div> 
+<!-- -------------------------------------------------------------------------------------------------------- Aba 4 -------------------------------------------------------------------------------------------------------->                               
+                                
                                 <div class="tab-pane fade" id="custom-tabs-four-settings" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
                                     
                                 </div>    
                             </div>
-                        </div>
+                        
                     </div>
                 </div>
 @stop
