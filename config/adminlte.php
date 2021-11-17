@@ -280,7 +280,7 @@ return [
 
         [
             'text' => 'Produtos',
-            'url'  => 'admin/settings',
+            'url'  => 'menu/produto',
             'icon' => 'nav-icon fas fa-columns',
         ],
 

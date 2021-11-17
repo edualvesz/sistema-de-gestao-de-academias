@@ -29,9 +29,11 @@ Route::get('academia/aluno', [App\Http\Controllers\AlunoController::class, 'inde
 
 Route::get('academia/aluno/detalhe', [App\Http\Controllers\DetalheController::class, 'index'])->name('detalhe'); //Rota do menu de opções da home
 
+
 //Rotas do menu de alunos
 
 Route::get('menu/aluno', [App\Http\Controllers\AlunoMenuController::class, 'index'])->name('aluno');
+
 
 //Rotas do menu de mensalidade
 
@@ -49,6 +51,11 @@ Route::get('menu/mensalidade/pagamento', [App\Http\Controllers\PagamentoControll
 Route::get('menu/acompanhamento', [App\Http\Controllers\AcompanhamentoController::class, 'index'])->name('acompanhamento'); //Rota do menu de acompanhamento
 
 Route::get('menu/acompanhamento/edit', [App\Http\Controllers\EditnovoController::class, 'index'])->name('edit'); //Rota da opção de iniciar novo acompanhamento
+
+
+//Rotas do menu de produtos
+
+Route::get('menu/produto', [App\Http\Controllers\ProdutoController::class, 'index'])->name('produto'); //Rota do menu de de produto
 
 //Route::resource('academia/aluno', 'AlunoController');
 
