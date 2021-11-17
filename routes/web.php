@@ -57,7 +57,9 @@ Route::get('menu/acompanhamento/edit', [App\Http\Controllers\EditnovoController:
 
 Route::get('menu/produto', [App\Http\Controllers\ProdutoController::class, 'index'])->name('produto'); //Rota do menu de de produto
 
-//Route::resource('academia/aluno', 'AlunoController');
+Route::get('menu/produto/store', [App\Http\Controllers\AddprodutoController::class, 'index'])->name('store'); //Rota de adicionar produto
+
+
 
 
 Auth::routes();
