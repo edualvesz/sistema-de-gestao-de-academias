@@ -55,7 +55,7 @@
                             <td>120,00</td>
                             <td>
                                 <div class="btn-group btn-group-sm">
-                                    <a title="Detalhe" href="menu/produto/store" class="btn btn-light"><i class="fas fa-eye"></i></a>
+                                    <a title="Detalhe" href="produto/detalhe" class="btn btn-light"><i class="fas fa-eye"></i></a>
                                     <a title="Editar" href="#" class="btn btn-info"><i class="fas fa-edit"></i></a>
                                     <a title="Excluir" href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                                 </div>

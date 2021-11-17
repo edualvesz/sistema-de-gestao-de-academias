@@ -59,6 +59,8 @@ Route::get('menu/produto', [App\Http\Controllers\ProdutoController::class, 'inde
 
 Route::get('menu/produto/store', [App\Http\Controllers\AddprodutoController::class, 'index'])->name('store'); //Rota de adicionar produto
 
+Route::get('menu/produto/detalhe', [App\Http\Controllers\ProddetalheController::class, 'index'])->name('detalheprod'); //Rota de detalhe das opções do menu de produto
+
 
 
 
