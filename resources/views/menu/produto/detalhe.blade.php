@@ -7,7 +7,48 @@
 @stop
 
 @section('content')
-    <!--<p>Welcome to this beautiful admin panel.</p>-->
+<div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+              </div>
+              <!-- ./card-header -->
+              <div class="card-body">
+                <table class="table table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Descrição</th>
+                      <th>Unidade</th>
+                      <th>Preço de compra</th>
+                      <th>Preço de venda</th>
+                      <th>Estoque</th>
+                      <th>Estoque mínimo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr data-widget="expandable-table" aria-expanded="false">
+                      <td>Whey Protein</td>
+                      <td>Unidade</td>
+                      <td>Preço de compra</td>
+                      <td>Preço de venda</td>
+                      <td>Bacon ipsum dolor sit amet</td>
+                      <td>Bacon ipsum dolor sit amet</td>
+                      <td>Bacon ipsum dolor sit amet</td>
+                    </tr>
+                  </tbody>
+                </table><br>
+                    <div class="col-1 mx-auto">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a href="produto/edit"><button type="button" class="btn btn-block btn-outline-primary btn-sm">Editar</button></a>
+                        </div>
+                    </div>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
 @stop
 
 @section('css')
