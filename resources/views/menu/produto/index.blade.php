@@ -45,6 +45,7 @@
                             <div class="card-body">
                                 <a href="produto/store" class="btn btn-success">Adicionar Produto</a>
                                 <a href="#" class="btn btn-danger">Produtos desativados</a>
+                                <!-- <button type="reset" class="btn btn-default" onclick="history.go(-1)">Voltar</button> -->
                             </div> 
                         </div>
                     <tbody>
