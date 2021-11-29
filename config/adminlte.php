@@ -286,7 +286,7 @@ return [
 
         [
             'text' => 'Vendas',
-            'url'  => 'admin/settings',
+            'url'  => 'menu/venda',
             'icon' => 'nav-icon fas fa-edit',
         ],
 

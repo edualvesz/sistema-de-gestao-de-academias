@@ -63,6 +63,12 @@ Route::get('menu/produto/detalhe', [App\Http\Controllers\ProddetalheController::
 
 Route::get('menu/produto/detalhe/edit', [App\Http\Controllers\ProdeditController::class, 'index'])->name('detalheedit'); //Rota da edição de detalhe do menu de produtos
 
+//Rotas do menu de vendas
+
+Route::get('menu/venda', [App\Http\Controllers\VendaController::class, 'index'])->name('venda');
+
+Route::get('menu/venda/store', [App\Http\Controllers\AddvendaController::class, 'index'])->name('venda');
+
 
 
 
