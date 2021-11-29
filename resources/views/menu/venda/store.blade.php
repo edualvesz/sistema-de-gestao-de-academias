@@ -17,6 +17,7 @@
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
+                                
                         </div>
                     </div>
                 </div>
@@ -24,6 +25,59 @@
               <!-- /.card-header -->
             <div class="card-body">
                 <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                    <div class="card card-success">
+                        <div class="card-header">
+                            <h3 class="card-title">Cadastro de venda</h3>
+                        </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <!-- text input -->
+                                    <div class="form-group">
+                                        <label>Data da venda</label>
+                                <input type="date" class="form-control" placeholder="Enter ...">
+                                    </div>
+                                </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <div class="form-group clearfix">
+                                                <div class="icheck-primary d-inline">
+                                                <input type="checkbox" id="checkboxPrimary1">
+                                                <label for="checkboxPrimary2"></label>
+                                            </div>
+                                            <div class="icheck-primary d-inline">
+                                                <label for="checkboxPrimary3">
+                                                Cliente cadastrado
+                                                </label>                
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Cliente" disabled="">
+                                    </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <div class="form-group clearfix">
+                                                <div class="icheck-primary d-inline">
+                                                <input type="checkbox" id="checkboxPrimary2">
+                                                <label for="checkboxPrimary2"></label>
+                                            </div>
+                                            <div class="icheck-primary d-inline">
+                                                <label for="checkboxPrimary3">
+                                                Vendedor
+                                                </label>                
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Vendedor" disabled="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+              <!-- /.card-body -->
+                </div>
             </div>
         </div>
     <div class="row"><div class="col-sm-12"><table id="example1" class="table table-bordered table-striped dataTable dtr-inline" role="grid" aria-describedby="example1_info">
