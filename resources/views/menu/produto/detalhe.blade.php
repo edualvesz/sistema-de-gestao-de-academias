@@ -40,7 +40,7 @@
                 </table><br>
                     <div class="col-1 mx-auto">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <a href="produto/edit"><button type="button" class="btn btn-block btn-outline-primary btn-sm">Editar</button></a>
+                            <a href="detalhe/edit"><button type="button" class="btn btn-block btn-outline-primary btn-sm">Editar</button></a>
                         </div>
                     </div>
               </div>
