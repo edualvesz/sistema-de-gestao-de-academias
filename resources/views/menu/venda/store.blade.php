@@ -37,7 +37,7 @@
                                     <!-- text input -->
                                     <div class="form-group">
                                         <label>Data da venda</label>
-                                <input type="date" class="form-control" placeholder="Enter ...">
+                                <input type="date" class="form-control">
                                     </div>
                                 </div>
                                     <div class="col-sm-4">

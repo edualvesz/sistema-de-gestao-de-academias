@@ -254,16 +254,17 @@ return [
             'label_color' => 'success',
         ],
         ['header' => 'account_settings'],*/
+
         [
             'text' => 'Resumo',
-            'url'  => '/home',
-            'icon' => 'nav-icon fas fa-th',
+            'url'  => 'menu/aluno',
+            'icon' => 'fas fa-fw fa-th',
         ],
 
         [
             'text' => 'Alunos',
-            'url'  => 'menu/aluno',
-            'icon' => 'fas fa-fw fa-user',
+            'url'  => '/home',
+            'icon' => 'nav-icon fas fa-user',
         ],
 
         [
