@@ -66,9 +66,11 @@ Route::get('menu/produto/detalhe/edit', [App\Http\Controllers\ProdeditController
 
 //Rotas do menu de vendas
 
-Route::get('menu/venda', [App\Http\Controllers\VendaController::class, 'index'])->name('venda');
+Route::get('menu/venda', [App\Http\Controllers\VendaController::class, 'index'])->name('venda'); //Rota do menu de vendas
 
-Route::get('menu/venda/store', [App\Http\Controllers\AddvendaController::class, 'index'])->name('venda');
+Route::get('menu/venda/store', [App\Http\Controllers\AddvendaController::class, 'index'])->name('venda'); //Rota da view de adicionar vendas
+
+Route::get('menu/venda/store/edit', [App\Http\Controllers\VendaeditController::class, 'index'])->name('vendaedit'); //Rota da view de editar vendas
 
 
 

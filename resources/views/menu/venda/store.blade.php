@@ -31,51 +31,33 @@
                         </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <form>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <!-- text input -->
-                                    <div class="form-group">
-                                        <label>Data da venda</label>
-                                <input type="date" class="form-control">
-                                    </div>
-                                </div>
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <div class="form-group clearfix">
-                                                <div class="icheck-primary d-inline">
-                                                <input type="checkbox" id="checkboxPrimary1">
-                                                <label for="checkboxPrimary2"></label>
-                                            </div>
-                                            <div class="icheck-primary d-inline">
-                                                <label for="checkboxPrimary3">
-                                                Cliente cadastrado
-                                                </label>                
-                                            </div>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Cliente" disabled="">
-                                    </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <div class="form-group clearfix">
-                                                <div class="icheck-primary d-inline">
-                                                <input type="checkbox" id="checkboxPrimary2">
-                                                <label for="checkboxPrimary2"></label>
-                                            </div>
-                                            <div class="icheck-primary d-inline">
-                                                <label for="checkboxPrimary3">
-                                                Vendedor
-                                                </label>                
-                                            </div>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Vendedor" disabled="">
-                                        </div>
-                                    </div>
+                        <div class="row">
+                            <div class="col-md-4 col-xs-2">
+                                <div class="form-group">
+                                <label for="unidadeVolume">Data de venda</label>
+                                <input type="date" class="form-control" name="volumeBolsa" required>
                                 </div>
                             </div>
-                        </form>
+                            <div class="col-md-4 col-xs-4">
+                                <div class="form-group">
+                                <label for="volumeBolsa">Cliente*</label>
+                                <input type="text" class="form-control" name="volumeBolsa" placeholder="ao digitar vai ser formada uma lista com os nomes" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-4">
+                                <div class="form-group">
+                                <label for="unidadeVolume">Vendedor*</label>
+                                <input type="text" class="form-control" name="volumeBolsa" placeholder="ao digitar vai ser formada uma lista com os vendedores" required>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-1 mx-auto">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a href="store/edit"><button type="button" class="btn btn-block btn-outline-success btn-sm">Editar</button></a>
+                            <a><button type="reset" class="btn btn-block btn-outline-success btn-sm" onclick="history.go(-1)">Voltar</button></a>
+                        </div>
+                    </div><br><br>
               <!-- /.card-body -->
                 </div>
             </div>
