@@ -308,35 +308,22 @@ return [
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [
-                    'text' => 'level_one',
+                    'text' => 'Alunos ativos',
                     'url'  => '#',
                 ],
+                
                 [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
+                    'text' => 'Alunos desativados',
+                    'url'  => '#',
                 ],
+
                 [
-                    'text' => 'level_one',
+                    'text' => 'Produtos',
+                    'url'  => '#',
+                ],
+
+                [
+                    'text' => 'Serviços',
                     'url'  => '#',
                 ],
             ],
