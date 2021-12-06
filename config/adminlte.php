@@ -293,7 +293,7 @@ return [
 
         [
             'text' => 'Financeiro',
-            'url'  => 'admin/settings',
+            'url'  => 'menu/financeiro',
             'icon' => 'nav-icon fas fa-chart-pie',
         ],
 

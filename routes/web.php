@@ -73,6 +73,11 @@ Route::get('menu/venda/store', [App\Http\Controllers\AddvendaController::class, 
 Route::get('menu/venda/store/edit', [App\Http\Controllers\VendaeditController::class, 'index'])->name('vendaedit'); //Rota da view de editar vendas
 
 
+//Rota do menu de vendas
+
+Route::get('menu/financeiro', [App\Http\Controllers\FinanceiroController::class, 'index'])->name('financeiro');
+
+
 
 
 Auth::routes();
