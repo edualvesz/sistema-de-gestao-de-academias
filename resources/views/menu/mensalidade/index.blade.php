@@ -16,9 +16,7 @@
         <div class="row align-self-center w-100">  <!-- Itens alinhados deverão ficar nessa div -->
             <div class="d-grid gap-2 d-md-block">
                 <!-- <a href="#" class="btn btn-success">+ Adicionar Novo</a> -->
-                <a href="" class="btn btn-app bg-success" data-target="#modal-lg" data-toggle="modal">
-                <i class="fas fa-users"></i> + Adicionar Novo
-                </a>
+                <a href="" class="btn btn-app bg-success" data-target="#modal-lg" data-toggle="modal"><i class="fas fa-users"></i> + Adicionar Novo</a>
             </div>
             @include('menu.mensalidade.modal')
 

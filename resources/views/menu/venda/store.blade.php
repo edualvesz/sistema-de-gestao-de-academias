@@ -11,7 +11,7 @@
     <div class="container-fluid">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Vendas</h3>
+                <h3 class="card-title">Cadastro de venda</h3>
             </div>
                 <div class="modal fade modal-slide-in-right" id="modal-lg" aria-hidden="true" aria-modal="true" role="dialog">
                     <div class="modal-dialog modal-lg">
@@ -27,7 +27,7 @@
                 <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
                     <div class="card card-success">
                         <div class="card-header">
-                            <h3 class="card-title">Cadastro de venda</h3>
+                            <h3 class="card-title">Detalhes da venda</h3>
                         </div>
                     <!-- /.card-header -->
                     <div class="card-body">
@@ -54,7 +54,7 @@
                     </div>
                     <div class="col-1 mx-auto">
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <a href="store/edit"><button type="button" class="btn btn-block btn-outline-success btn-sm">Editar</button></a>
+                            <a href="store/edit"><button type="button" class="btn btn-block btn-outline-success btn-sm">Continuar</button></a>
                             <a><button type="reset" class="btn btn-block btn-outline-success btn-sm" onclick="history.go(-1)">Voltar</button></a>
                         </div>
                     </div><br><br>
