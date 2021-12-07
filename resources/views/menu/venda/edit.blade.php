@@ -54,8 +54,9 @@
                     </div>
                         <div class="col-1 mx-auto">
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <a href="#"><button type="button" class="btn btn-block btn-outline-info btn-sm">+ Adicionar</button></a>
+                                <a href="#"><button type="button" class="btn btn-block btn-outline-info btn-sm">Adicionar</button></a>
                                 <!-- <a><button type="reset" class="btn btn-block btn-outline-info btn-sm" onclick="history.go(-1)">Voltar</button></a> -->
+                                <a><button type="reset" class="btn btn-block btn-outline-info btn-sm" onclick="history.go(-1)">Voltar</button></a> 
                             </div>
                         </div><br><br>
                     </div>
