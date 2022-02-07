@@ -72,10 +72,12 @@ Route::get('menu/venda/store', [App\Http\Controllers\AddvendaController::class, 
 
 Route::get('menu/venda/store/edit', [App\Http\Controllers\VendaeditController::class, 'index'])->name('vendaedit'); //Rota da view de editar vendas
 
+Route::get('menu/venda/detalhe' , [App\Http\Controllers\VendadetalheController::class, 'index'])->name('vendadet');
 
-//Rota do menu de vendas
 
-Route::get('menu/financeiro', [App\Http\Controllers\FinanceiroController::class, 'index'])->name('financeiro');
+//Rota do menu de financeiro
+
+Route::get('menu/financeiro', [App\Http\Controllers\FinanceiroController::class, 'index'])->name('financeiro'); //Rota do detalhe do menu de vendas
 
 
 

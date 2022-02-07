@@ -77,7 +77,7 @@
                             <td>Não faturado</td>
                             <td>
                                 <div class="btn-group btn-group-sm">
-                                    <a title="Detalhe" href="#" class="btn btn-light"><i class="fas fa-eye"></i></a>
+                                    <a title="Detalhe" href="venda/detalhe" class="btn btn-light"><i class="fas fa-eye"></i></a>
                                     <a title="Editar" href="#" class="btn btn-info"><i class="fas fa-edit"></i></a>
                                     <a title="Excluir" href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                                 </div>
