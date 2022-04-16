@@ -108,29 +108,25 @@
 <!-- ==========================================MODAL DE CADASTRO DO ALUNO================================================== -->
 
             
-<div id="cadastroAluno" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<!-- <div id="cadastroAluno" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="col-8"> <!-- div que da a largura para e objeto -->
-                <div class="card card-info">
-                    <div class="card-header">
-                        <h3 class="card-title">Cadastro de aluno</h3>
-                    </div>
-                    <!-- /.card-header -->
+            <div class="col-8"> --> <!-- div que da a largura para e objeto -->
+    <div class="modal fade bd-example-modal-lg" id="cadastroAluno" tabindex="-1" role="dialog" aria-labelledby="MyIncritosModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            <div class="modal-header">
+                <div class="row">
                     <!-- form start -->
                     <form class="form-horizontal">
                         <div class="card-body">
                             <div class="form-group row">
                                 <label for="inputEmail3" class="col-sm-2 col-form-label">Nome*</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="nome" placeholder="Nome" maxlength="50" required>
-                                </div>
+                                <input type="text" class="form-control" id="nome" placeholder="Nome" maxlength="50" required>
                             </div>
                             <div class="form-group row">
                                 <label for="inputPassword3" class="col-sm-2 col-form-label">Data de Nascimento</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="nascimento" data-mask="00/00/0000" placeholder="Data de Nascimento">
-                                </div>
+                                <input type="text" class="form-control" id="nascimento" data-mask="00/00/0000" placeholder="Data de Nascimento">
                             </div>
                             <div class="form-group row">
                                 <label for="inputPassword3" class="col-sm-2 col-form-label">email*</label>
@@ -230,9 +226,21 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script>
 
-    function adicionarAluno(){
+    function adicionarAluno(nome, nascimento, email, celular, recado, endereco, casa, bairro, cidade, estado, cep, atualizacoes){
         $('#cadastroAluno').modal('show')
-        
+
+        document.getElementById('nome').value = nome
+        document.getElementById('nascimento').value = nascimento
+        document.getElementById('email').value = email
+        document.getElementById('celular').value = celular
+        document.getElementById('telRecado').value = recado
+        document.getElementById('endereco').value = endereco
+        document.getElementById('numeroCasa').value = casa
+        document.getElementById('bairro').value = bairro
+        document.getElementById('cidade').value = cidade
+        document.getElementById('estado').value = estado
+        document.getElementById('cep').value = cep
+        document.getElementById('atualizacoes').checked = atualizacoes
     }
 
     </script>
