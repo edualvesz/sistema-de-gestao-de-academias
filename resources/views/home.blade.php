@@ -113,73 +113,67 @@
         <div class="modal-content">
             <div class="col-8"> --> <!-- div que da a largura para e objeto -->
     <div class="modal fade bd-example-modal-lg" id="cadastroAluno" tabindex="-1" role="dialog" aria-labelledby="MyIncritosModal" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
             <div class="modal-header">
+                <h5 class="modal-title">Preencha os campos abaixo</h5> 
+            </div>
+            <div class="modal-body">
                 <div class="row">
                     <!-- form start -->
                     <form class="form-horizontal">
-                        <div class="card-body">
                             <div class="form-group row">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">Nome*</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Nome" maxlength="50" required>
+                                <div class="col-sm-60">
+                                    <input type="text" class="form-control" id="nome" placeholder="Nome" maxlength="50" required>
+                                </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Data de Nascimento</label>
-                                <input type="text" class="form-control" id="nascimento" data-mask="00/00/0000" placeholder="Data de Nascimento">
+                                <div class="col-sm-60">
+                                    <input type="text" class="form-control" id="nascimento" data-mask="00/00/0000" placeholder="Data de Nascimento">
+                                </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">email*</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-60">
                                     <input type="email" class="form-control" id="email" placeholder="email" maxlength="50" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Celular*</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-60">
                                     <input type="text" class="form-control" id="celular" data-mask="(00) 00000-0000" placeholder="Celular" required>
                                 </div>
                             </div>
-
                             <div class="form-group row">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Tel. Recado</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-60">
                                     <input type="text" class="form-control" id="telRecado" data-mask="(00) 0000-0000" placeholder="Tel. recado">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Rua*</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-60">
                                     <input type="text" class="form-control" id="endereco" placeholder="Rua" maxlength="50" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Número*</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-60">
                                     <input type="text" class="form-control" id="numeroCasa" placeholder="Número" maxlength="6" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Bairro*</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-60">
                                     <input type="text" class="form-control" id="bairro" placeholder="Bairro" maxlength="30" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Cidade*</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-60">
                                     <input type="text" class="form-control" id="cidade" placeholder="Cidade" maxlength="30" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Estado*</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-60">
                                     <input type="text" class="form-control" id="estado" placeholder="Estado" maxlength="30" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">CEP*</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-60">
                                     <input type="text" class="form-control" id="cep" data-mask="00000-000" placeholder="CEP">
                                 </div>
                             </div>
@@ -191,8 +185,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- /.card-body -->
                         <div class="card-footer">
                             <button type="submit" class="btn btn-info" id="salvar">Salvar</button>
                             <button type="reset" class="btn btn-default float-left" id="limpaCampos">Limpar</button>
