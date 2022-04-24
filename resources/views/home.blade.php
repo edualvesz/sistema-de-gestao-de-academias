@@ -121,7 +121,8 @@
             <div class="modal-body">
                 <div class="row">
                     <!-- form start -->
-                    <form method="POST" class="form-horizontal">
+                    <form method="POST" class="form-horizontal" name="formAluno">
+                            @csrf
                             <div class="form-group row">
                                 <input type="hidden" class="form-control" id="id">
                             </div>
@@ -183,7 +184,7 @@
                             <div class="form-group row">
                                 <div class="offset-sm-2 col-sm-10">
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="atualizacoes">
+                                        <input type="checkbox" class="form-check-input" id="atualiza">
                                         <label class="form-check-label" for="exampleCheck2">Receber atualizações</label>
                                     </div>
                                 </div>
@@ -219,11 +220,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('form[name="formAluno"]').submit(function(event){                    /* sintaxe basica do jquery */
+            event.preventDefault()                                                 /* previne o comportamento de atualizar a pagina */
+                $.ajax({
+                    url: "{{ route('home') }}",
+                    type: "post",
+                    data: $(this).serialize(),
+                    dataType: 'json',
+                    success: function(response){
+                        if(response === true){
+                            //redirecionar
+                        } else {
+                            alert('erro' + response.message)
+                        }
+                        //console.log(response) 
+                    }
+                })
+                /* let nome = $(this).find('input#nome').val() */                       /* variavel nome vai ser igual ao proprio elemento que estou trabalhando no momento, vai procurar no elemento com find o input com o id nome */  
+                /* alert('teste ' + nome) */
+            })
+        });
+    </script>
+
     <script>
 
     // FUNCAO DE ABRIR O MODAL DE CADASTRO DE ALUNO
 
-    function adicionarAluno(id, nome, nascimento, email, celular, recado, endereco, casa, bairro, cidade, estado, cep, atualizacoes){
+    function adicionarAluno(id, nome, nascimento, email, celular, recado, endereco, casa, bairro, cidade, estado, cep, atualiza){
         $('#cadastroAluno').modal('show')
 
         document.getElementById('id').value = id
@@ -238,7 +264,7 @@
         document.getElementById('cidade').value = cidade
         document.getElementById('estado').value = estado
         document.getElementById('cep').value = cep
-        document.getElementById('atualizacoes').checked = atualizacoes
+        document.getElementById('atualiza').checked = atualiza
     }
 
     //FUNCAO DE SALVAR NOVO ALUNO
@@ -257,7 +283,7 @@
         let cidade = document.getElementById('cidade').value
         let estado = document.getElementById('estado').value
         let cep = document.getElementById('cep').value
-        let atualizacoes = document.getElementById('atualizacoes').value
+        let atualiza = document.getElementById('atualiza').value
 
         data.append('id', id)
         data.append('nome', nome)
@@ -271,9 +297,9 @@
         data.append('cidade', cidade)
         data.append('estado', estado)
         data.append('cep', cep)
-        data.append('atualizacoes', atualizacoes)
+        data.append('atualiza', atualiza)
 
-        console.log(id, nome, nascimento, email, celular, recado, endereco, casa, bairro, cidade, estado, cep, atualizacoes)
+        console.log(id, nome, nascimento, email, celular, recado, endereco, casa, bairro, cidade, estado, cep, atualiza)
     
         $.ajax({
             type: 'POST',

@@ -28,7 +28,7 @@ class HomeController extends Controller
     }
 
     public function salvaAluno(){
-        $aluno = new Home();
-        if($aluno->salvanoBanco());
+        // $aluno = new Home();
+        // if($aluno->salvanoBanco());
     }
 }
