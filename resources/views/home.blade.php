@@ -121,10 +121,13 @@
             <div class="modal-body">
                 <div class="row">
                     <!-- form start -->
-                    <form class="form-horizontal">
+                    <form method="POST" class="form-horizontal">
+                            <div class="form-group row">
+                                <input type="hidden" class="form-control" id="id">
+                            </div>
                             <div class="form-group row">
                                 <div class="col-sm-60">
-                                    <input type="text" class="form-control" id="nome" placeholder="Nome" maxlength="50" required>
+                                    <input type="text" class="form-control" id="nome" placeholder="Nome" maxlength="50" >
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -134,12 +137,12 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-60">
-                                    <input type="email" class="form-control" id="email" placeholder="email" maxlength="50" required>
+                                    <input type="text" class="form-control" id="email" placeholder="email" maxlength="50" >
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-60">
-                                    <input type="text" class="form-control" id="celular" data-mask="(00) 00000-0000" placeholder="Celular" required>
+                                    <input type="text" class="form-control" id="celular" data-mask="(00) 00000-0000" placeholder="Celular" >
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -149,27 +152,27 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-60">
-                                    <input type="text" class="form-control" id="endereco" placeholder="Rua" maxlength="50" required>
+                                    <input type="text" class="form-control" id="endereco" placeholder="Rua" maxlength="50" >
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-60">
-                                    <input type="text" class="form-control" id="numeroCasa" placeholder="Número" maxlength="6" required>
+                                    <input type="text" class="form-control" id="numeroCasa" placeholder="Número" maxlength="6" >
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-60">
-                                    <input type="text" class="form-control" id="bairro" placeholder="Bairro" maxlength="30" required>
+                                    <input type="text" class="form-control" id="bairro" placeholder="Bairro" maxlength="30" >
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-60">
-                                    <input type="text" class="form-control" id="cidade" placeholder="Cidade" maxlength="30" required>
+                                    <input type="text" class="form-control" id="cidade" placeholder="Cidade" maxlength="30" >
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-60">
-                                    <input type="text" class="form-control" id="estado" placeholder="Estado" maxlength="30" required>
+                                    <input type="text" class="form-control" id="estado" placeholder="Estado" maxlength="30" >
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -186,7 +189,7 @@
                                 </div>
                             </div>
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-info" id="salvar">Salvar</button>
+                            <button type="submit" class="btn btn-info" id="salvar" onclick="salvaAluno()">Salvar</button>
                             <button type="reset" class="btn btn-default float-left" id="limpaCampos">Limpar</button>
                             <button type="reset" class="btn btn-default float-left" onclick='history.go(-1)'>Voltar</button>
                         </div>
@@ -218,9 +221,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script>
 
-    function adicionarAluno(nome, nascimento, email, celular, recado, endereco, casa, bairro, cidade, estado, cep, atualizacoes){
+    // FUNCAO DE ABRIR O MODAL DE CADASTRO DE ALUNO
+
+    function adicionarAluno(id, nome, nascimento, email, celular, recado, endereco, casa, bairro, cidade, estado, cep, atualizacoes){
         $('#cadastroAluno').modal('show')
 
+        document.getElementById('id').value = id
         document.getElementById('nome').value = nome
         document.getElementById('nascimento').value = nascimento
         document.getElementById('email').value = email
@@ -233,6 +239,53 @@
         document.getElementById('estado').value = estado
         document.getElementById('cep').value = cep
         document.getElementById('atualizacoes').checked = atualizacoes
+    }
+
+    //FUNCAO DE SALVAR NOVO ALUNO
+
+    function salvaAluno(){
+        let data = new FormData();
+        let id = document.getElementById('id').value
+        let nome = document.getElementById('nome').value
+        let nascimento = document.getElementById('nascimento').value
+        let email = document.getElementById('email').value
+        let celular = document.getElementById('celular').value
+        let recado = document.getElementById('telRecado').value
+        let endereco = document.getElementById('endereco').value
+        let casa = document.getElementById('numeroCasa').value
+        let bairro = document.getElementById('bairro').value
+        let cidade = document.getElementById('cidade').value
+        let estado = document.getElementById('estado').value
+        let cep = document.getElementById('cep').value
+        let atualizacoes = document.getElementById('atualizacoes').value
+
+        data.append('id', id)
+        data.append('nome', nome)
+        data.append('nascimento', nascimento)
+        data.append('email', email)
+        data.append('celular', celular)
+        data.append('telRecado', recado)
+        data.append('endereco', endereco)
+        data.append('numeroCasa', casa)
+        data.append('bairro', bairro)
+        data.append('cidade', cidade)
+        data.append('estado', estado)
+        data.append('cep', cep)
+        data.append('atualizacoes', atualizacoes)
+
+        console.log(id, nome, nascimento, email, celular, recado, endereco, casa, bairro, cidade, estado, cep, atualizacoes)
+    
+        $.ajax({
+            type: 'POST',
+            url: 'Home/salvaAluno',
+            processData: false,
+            processType: false,
+            success: function(html){
+                if(html != "true"){
+                    alert('O aluno foi cadastrado no sistema com sucesso!')
+                }
+            }
+        })
     }
 
     </script>
